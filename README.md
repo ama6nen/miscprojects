@@ -1,2 +1,2 @@
 # miscprojects
-Code snippets, very small projects, and incomplete code
+Code snippets, small projects, incomplete code, misc text files
