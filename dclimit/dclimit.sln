@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dclimit", "dclimit\dclimit.csproj", "{BE05D0C5-4063-48C0-BBBC-E2A2E82C7CA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE05D0C5-4063-48C0-BBBC-E2A2E82C7CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE05D0C5-4063-48C0-BBBC-E2A2E82C7CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE05D0C5-4063-48C0-BBBC-E2A2E82C7CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE05D0C5-4063-48C0-BBBC-E2A2E82C7CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A381A660-F0B4-4E6D-95A1-83A3DE5D0B9A}
+	EndGlobalSection
+EndGlobal
