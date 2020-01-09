@@ -1,0 +1,300 @@
+log of all current features in server.
+
+last update: 9.1.2020 (d/M/yyyy)
+
+a more frequently updated version can be found at: https://pastebin.com/atPhhvrf
+
+---------------------
+	notes
+---------------------
+[fully working]
+when something says it is fully working, it means its identical to how it would be to be in real GT.
+That means its not something that works but it also works EXACTLY how it should be.
+It means you should not be able to tell it apart from real gt.
+It also means the dialogs are EXACTLY like in real gt.
+
+[ghetto]
+when something something says its ghetto, it means it works but you can tell it apart from real gt.
+this could mean that the dialog is altered, something is simplified due to laziness, etc
+
+------------------------------
+ features currently in server
+------------------------------
+-not based on anybodys (growtopia noobs) code at all
+-server shouldn't crash as generalized functions always check for validity first, in the case it does though, everything is traced.
+-database using mysql instead of ghetto json
+-framework has a lot of capabilities already developed to add new features quickly, and implementing&deploying them is fast
+-integrated http server into the server, which serves custom cache files, and can determine file request abuse and allocate resources intelligently
+
+-fully working proper block drops (seeds & blocks drop at same rate as in real server)
+-fully working proper block breaking with proper cooldown and hits to break
+-fully working proper item drops and collecting
+-fully working proper gems (not adding to ur gem count with onsetbux)
+-fully working proper tree support with exact growth and tree fruit calculations
+	-NOTE: grow spray and deluxe grow spray have both been buffed to grow 24 times more than in real gt. So normal one grows 1 day, deluxe 24 days.
+-fully working splicing for all trees
+-fully working accurate tree drops
+-fully working trashing and recycling
+-fully working info/descriptions with all of the properties, rarity, and etc
+-dropping (difference: our dropping system doesn't let you drop as close to a collideable tile as gt, you have to be around 16 pixels away
+at minimum for dropping to work, meanwhile gt has it as 8 pixels (roughly). block drops will drop even if there is something there already,
+as well, as we thought it was dumb to restrict drops just because some other thing happens to be dropped there already, and its identical otherwise)
+-fully working movement
+-growmojis (note: some ways of gaining them are different, like the ones gained from monthly bundles, are instead unlocked by leveling up.)
+-fully working worlds that already serialize all but 6 block types
+-fully working respawning (both spikes/in block and actual respawn)
+-fully working lava/cactus/etc damage
+-fully working skin color changing
+	-skin color level checks according t o supporter/ssupporter status
+	-playmods have additive skin coloring that gt has too (ex. tomato + egg = orangish, egg + blueberry = gray)
+-fully working billboards
+-fully working infecting mechanic
+-fully working leveling and xp (note: as fishing and such activities are yet not implemented you cannot earn xp by them)
+	- the xp earned is exactly same as in real gt (except added benefits), and so are the level requirements
+	- current ways of earning xp: breaking blocks, harvesting trees, using consumables, placing blocks
+	- you also earn xp by placing blocks though, although half what you would when breaking.
+	- this is to make leveling faster as people aren't going to spend as much time in private servers as in real one.
+
+-clothing (all the effects are not yet done)
+	-all basic clothing types work
+	-all of the items that have playmods that are below
+	
+-list of playmods supported:
+	[NOTE: all the following items have working playmod desc when you wrench yourself and when the effect gets added/removed]
+	[the exact same items give the exact same effects as they do in real gt server.]
+	[and playmod just means the effect, as u can see in gt wiki page Mods]
+[clothing mods]
+	-double jump
+	-eye beam
+	-cupid's firepower
+	-cheerful giver
+	-high jump
+	-fists o fury
+	-enhanced digging
+	-fireproof
+	-ninja stealth
+	-armed and dangerous (also can kill ppl w antler hat, same for other armed n dangerous variations)
+	-speedy
+	-bunnyesque
+	-black magic
+	-bow & arrow
+	-iron mfff
+	-stinky (clothes)
+	-little fishy
+	-armed and dangerous (shotgun)
+	-putt putt putt
+	-dragonborn (red drag)
+	-frankenpunch
+	-death to blocks
+	-red bones
+	-dr destructo
+	-armed and dangerous (six shooter)
+	-transylvanian accent
+	-focused eyes
+	-mark of growganoth
+	-flaming hot
+	-dragonborn (ice dragon)
+	-space commander
+	-icy flesh
+	-black lightning
+	-rainbows
+	-fishy
+	-dragonborn (fiesta drag)
+	-squirt gun
+	-musical
+	-flamethrowin'
+	-legendary (bot)
+	-legendary (dragon)
+	-fistful of thunder
+	-drakeborn
+	-ring of force
+	-the one ring
+	-icy pet
+	-fiery pet
+	-chaos
+	-slasher (also carving w carrot & rapier)
+	-claws
+	-dragondead
+	-super special cultist
+	-cosmic pals
+[other playmods]
+	-egged
+	-duct tape
+	-curse
+	-frozen
+	-caffeinated
+	-saucy
+	-feelin blue
+	-ghost in the shell
+	-devil horns
+	-angelic halo
+	-fireball
+	-floating
+	-stinky (consum.)
+	-muddy
+	-valentine
+	-lucky
+	-envious
+	-doctor repulsion
+	-ban
+	-on fire
+	-infected
+	-g-virus immunity
+	-strong bones (note: does nothing in real gt. but i made this so it makes you unnoticeably slightly faster)
+	-recovering
+	-malpractice
+	-recently name changed (note: time has been reduced to 10 days)
+	-food extra xp
+	-minty
+	-spikeproof
+	-haunted
+	-xenonite
+-fully working npcs:
+	-NOTE: this means the npc / particle behaves as should; does not mean its exactly the same otherwise. if it is, they are listed for a second time elsewhere
+	-blast (howler)
+	-trickster
+-fully working locks:
+	-small/big/huge locks with exact same lock areas as real gt
+	-locks which act as world locks
+	-bpm changing (wls only)
+	-access giving (with confirm dialog as in real gt)
+	-public checkbox
+	-disable and/or hide music sheets (wls only)
+	-lock reapplying and air ignoring (non-wls only)
+	-GREEN KEY!!!! (the access level is shown as supposed to)
+	-identical access system to real gt, you can have access to a small lock in a world with wl that you dont have access to, etc etc
+	-emerald lock gives proper effect
+	-lock decay, show owner last time played
+	-NOTE: rest of the settings will be added later, like level restriction, and settings that are only for royal lock or etc will be added as well
+-fully working properly the following blocks:
+	[list of supported blocks, note that most of these are based on their type so even tho platforms dont do anything special theyre listed as their own thing]
+	[NOTE: this means the properties and dialogs both are exactly how supposed to be]
+	-all normal background/foreground tiles
+	-all seeds/trees
+	-all locks
+	-sheet music
+	-mannequins
+	-multi-facing tiles
+	-heart monitors
+	-display block
+	-damaging tiles like lava & cactus
+	-slippery tiles
+	-kill on touch tiles like spikes, venus
+	-door entrances, and similar blocks
+	-dragon gates, other kill on close blocks
+	-changes on hit tiles (cash register, slot machine, roulette wheel, etc)
+	-toggleable animated blocks (fireplace, boombox, music box, etc)
+	-dice block (note: it will not take damage on the 1st roll because i thought this was stupid so i removed it)
+	-signs
+	-doors
+	-pathmarkers
+	-platforms
+	-portals
+	-mystery block types (pot o gold, mystery block, treasure hoard (ghetto), locke's mystery box (ghetto))
+	-jammers (punch, zombie, signal, antigravity generator)
+	-treasure chest & other item storages
+	-pinball bumper-like blocks
+	-normal weather machines
+	-special weather machines such as: stuff, background, heatwave
+	-blasters (howler, trickster, NOTE: rate of fire is 1-30 instead of 2-20, speed is 5-300 instead of 20-200)
+	-xenonite crystal (TODO: fire resistance, all other things are working)
+	-[GHETTO] epoch machine (selects 1 of the 3 weathers randomly instead of having dialog and timing, will be updated at a later date)
+	-vending machines (note: the 15 second delay has been removed as it was deemed useless and only taking from the experience, they are
+			  100% identical other than the removed delay. you still cannot scam people by changing the price when someone is buying.)
+	-new blocks: compressed gems, and gem compressor (see below for more info about it)
+
+-mechanic: gem compressing
+	-new blocks (compressed gems: 1k, 5k, 10k, 50k, 100k)
+	-gem compressor allows you to compress gems into blocks which always give you the amount of gems back
+	-compressed gems can be traded, making it a mechanic to trade gems (when trading is implemented, it is not at the moment)
+-blast changes:
+	-new item: tiny blast, makes 75x45 world instead of 100x60
+	-new item: huge blast, makes 125x75 world instead of 100x60
+	-desert blast's pyramid now contains a lot of new things because i thought just silver idol/sungate was underwhelming
+-fully working consumables
+	[list of supported consumables]
+	- eggs, coffee, all paints, water bucket
+	- tomato, curse wand, snowball
+	- blueberry, devil horns, golden halo,
+	- devilfruit, fire wand, freeze wand,
+	- das red balloon, bubble gum, mud glob
+	- valentine, perfume, rotten egg, onion
+	- duct tape, clover, songypyeon, rabbit's foot
+	- green beer, avocado, apple, golden apple
+	- ban wand, habanero pepper, habanero cheese bread
+	- g-virus, grow spray, deluxe grow spray
+	- door mover, thermonuclear blast, desert blast
+	- tiny blast, huge blast, antidote, milk
+	- birth certificate, eggs benedict
+	- mint julep, spike juice, doppelganger potion
+-fully working player wrenching
+[self wrenching]
+	- shows level, xp, etc like in real gt
+	- shows active effects / playmods with accurate time, name, icon, etc
+	- shows achievements (NOTE: at the moment there are none)
+	- shows world, time played, etc, etc
+	- shows literally everything that real gt does show, you probably get the point by now, not gonna list everything
+	- NOTE: above statement is false, does not yet support guilds/battle shit/daily quests/etc
+[wrenching others]
+	- shows everything as real gt would show, except report player button and battle leash.
+-barebones trading (could not be said it is fully working right now.)
+-registration (difference: your name can be 2-17 chars, instead of 3-15. You can have one dot in your name as well.)
+-support for worlds with 1 . and _ in name
+-inventory:
+	-items stack up to 250 instead of 200
+	-starting inventory size is 24 instead of 16
+-AAP pin support 
+	- when you log on from a new device and IP you need to enter your pin to login
+	- completely optional, not on by default
+-primitive anticheat
+	- detects speed/gravity mismatch
+	- detects speedhack
+	- detects build/place range mismatch
+	- detects effect flags mismatch
+	- detects most bots
+-barebones banning system
+-chat:
+	- instead of the horrible new format and coloring that came with 2.998 update, we have the old coloring,
+	- and users can still color their chat however they want. Messages will still be sent to the proper channels such as WORLD, SYSTEM, MSG, etc
+	- but the colors wont be horrible and the format of the chat is 100% like the old one was.
+
+-commands:
+[for all players]
+	- /home, /sethome, /gethome - set, get, and go to home
+	- /help - help command
+	- /help {name} - give specific information and help about any command 
+	- /dance /cheer /love /fp /yes /no /omg /idk /shrug /furious /rolleyes /dab /sassy /dance2 /lol /wave /troll /shower
+	- /trade - trade command
+	- /unaccess - removes access from all locks in the world
+	- /state - shows state (TODO: not done)
+[for people with access]
+TODO
+[for supporters]
+TODO
+[for super supporters]
+TODO
+[for moderators]
+	- /ghost - just like in gt for mods, the noclip
+	- /invis - makes you invisible for other people
+	- /magic - the magic command that gt mods have access to
+[for administrators]
+	- /give x y - gives y items of id x
+	- /give x - gives one item of id x
+	- /give name - gives 250 items with exact name, if it exists
+	- /find name - shows all items that contain the name in the most relevant order measured by lehvenstein distance
+	- /eff id amount - plays particle effect of said id with said amount, for testing
+	- /eff id - plays particle effect of said id, for testing
+	- /eff2 id - adds a particle emitter of said id
+	- /eff2 id amount - adds a particle emitter of said id with said amount 
+
+
+-sign and other label optional formatting options:
+	-for example if you have "world is: [world]" in sign, it will replace [world] with the world's name
+	- [world] for world name
+	- [fg] for the fg id
+	- [bg] for the bg id
+	- [fgname] for the fg name
+	- [bgname] for the bg name
+	- ** gets replaced with `, because many kb layouts do not support ` input for gt chat.
+
+-a lot of other things which arent big enough to be mentioned here or i just forgot to add them here
