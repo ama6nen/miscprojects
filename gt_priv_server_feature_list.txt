@@ -1,8 +1,23 @@
 log of all current features in server.
 
-last update: 9.1.2020 (d/M/yyyy)
+last update: 19.1.2020 (d/M/yyyy)
 
 a more frequently updated version can be found at: https://pastebin.com/atPhhvrf
+
+[changelog]
+0.03
+-better explosion handler
+-add dynamite
+-add black tar heroin
+-manage texture content thru git too
+
+0.02
+-added tnt, fixed desert howler bug, some other changes
+-add changelog
+
+0.01
+-everything so far, will start at 0.01
+
 
 ---------------------
 	notes
@@ -149,6 +164,7 @@ as well, as we thought it was dumb to restrict drops just because some other thi
 	-spikeproof
 	-haunted
 	-xenonite
+	-on heroin
 -fully working npcs:
 	-NOTE: this means the npc / particle behaves as should; does not mean its exactly the same otherwise. if it is, they are listed for a second time elsewhere
 	-blast (howler)
@@ -201,12 +217,16 @@ as well, as we thought it was dumb to restrict drops just because some other thi
 	-[GHETTO] epoch machine (selects 1 of the 3 weathers randomly instead of having dialog and timing, will be updated at a later date)
 	-vending machines (note: the 15 second delay has been removed as it was deemed useless and only taking from the experience, they are
 			  100% identical other than the removed delay. you still cannot scam people by changing the price when someone is buying.)
-	-new blocks: compressed gems, and gem compressor (see below for more info about it)
+	-new blocks: compressed gems, tnt, and gem compressor (see below for more info about it)
 
 -mechanic: gem compressing
 	-new blocks (compressed gems: 1k, 5k, 10k, 50k, 100k)
 	-gem compressor allows you to compress gems into blocks which always give you the amount of gems back
 	-compressed gems can be traded, making it a mechanic to trade gems (when trading is implemented, it is not at the moment)
+-new block: tnt
+	-stolen from minecraft
+	-explodes, breaks around 15 tiles at max
+	-only world owner can place tnts
 -blast changes:
 	-new item: tiny blast, makes 75x45 world instead of 100x60
 	-new item: huge blast, makes 125x75 world instead of 100x60
@@ -227,6 +247,9 @@ as well, as we thought it was dumb to restrict drops just because some other thi
 	- tiny blast, huge blast, antidote, milk
 	- birth certificate, eggs benedict
 	- mint julep, spike juice, doppelganger potion
+consumable changes:
+	-new consumable: heroin (gives very large speed buff and some other changes for 3 secs, and then kills you)
+	-new consumable: dynamite (throwable and works just like tnt in terms of explosion. explodes when it hits a collideable block.)
 -fully working player wrenching
 [self wrenching]
 	- shows level, xp, etc like in real gt
